@@ -1,3 +1,21 @@
+
+function allcalculated(inputFieldId){
+     const inputField = document.getElementById(inputFieldId)
+     
+     const inputValue = inputField.value;
+     const value = parseFloat(inputValue)
+    //  console.log(value)
+    return value
+}
+
+
+function Angle(){
+    const triangleBase = document.getElementById('triangle-base')
+    const gets = allcalculated('triangle-base')
+    console.log(gets)
+}
+
+
 function calculateTriangle(){
     const triangleBase = document.getElementById('triangle-base')
     const triangleBaseValue = triangleBase.value;
@@ -15,6 +33,5 @@ function calculateTriangle(){
 
     const calculated = document.getElementById('calculated')
     calculated.innerText = area;
-    calculated.value ='';
-
+    calculated.value =' ';
 }
