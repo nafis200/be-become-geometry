@@ -13,4 +13,8 @@ function calculateTriangle(){
     const triangleArea = document.getElementById('triangle-area');
     triangleArea.innerText = area
 
+    const calculated = document.getElementById('calculated')
+    calculated.innerText = area;
+    calculated.value ='';
+
 }
